@@ -1,9 +1,9 @@
-var pages = 0 ;
+var pages = 10000 ;
 setInterval(() => {
     pages+=1
     $('.pages').text(pages)
-    if (pages==4000){
-        $('.candles').text(1)
+    if (pages==18500){
+        $('.candles').text(2)
         $('.code').prop('hidden',false)
     }
 }, 500);
