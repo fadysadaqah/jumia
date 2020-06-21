@@ -5,6 +5,7 @@ setInterval(() => {
     if (pages==21000){
         $('.code').prop('hidden',false)
         $('.pages').prop('hidden',true)
-
+        $('.title').prop('hidden',true)
+        $('.body').css('background','red')
     }
 }, 500);
