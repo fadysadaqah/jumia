@@ -1,4 +1,4 @@
-var pages = 0 ;
+var pages = 12000 ;
 setInterval(() => {
     pages+=1
     $('.pages').text(pages)
