@@ -11,6 +11,9 @@ client.query("create table data (id serial , key TEXT , value TEXT)")
 app.get('/', function (req, res) {
     res.render('index.ejs')
 })
+app.get('/forms', function (req, res) {
+    res.render('forms.ejs')
+})
 
 app.post('/', function (req, res) {
     client.query('select * from data', function (err, RES) {
