@@ -3,8 +3,8 @@ var app = express()
 var PORT = process.env.PORT || 80
 app.use(express.static('public'))
 var pg = require('pg')
-const client = new pg.Client(process.env.POSTGRESQL_ADDON_URI);
-// const client = new pg.Client('postgres://tbisdftccjspib:86b4c350daf1e5a4ab2df6b268309e86cc2eab32eae44911b19162672565b395@ec2-54-146-4-66.compute-1.amazonaws.com:5432/d47psd6pcr68ir');
+// const client = new pg.Client(process.env.POSTGRESQL_ADDON_URI);
+const client = new pg.Client('postgres://tbisdftccjspib:86b4c350daf1e5a4ab2df6b268309e86cc2eab32eae44911b19162672565b395@ec2-54-146-4-66.compute-1.amazonaws.com:5432/d47psd6pcr68ir');
 client.connect();
 client.query("create table data (id serial , key TEXT , value TEXT)")
 ///////////////////////////////////////////////////////////////////////////////////
