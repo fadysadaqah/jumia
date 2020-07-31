@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.jpg);
+}
+.body{
+    width: 50%;
+    height:70%;
+    margin: auto;
+    background-color: #fdb52b;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pages{
+    margin:0 10px
+}
